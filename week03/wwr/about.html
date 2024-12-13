@@ -3,70 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About us page for Rapids Rafting Adventures.">
-    <title>About Us - Rapids Rafting Adventures</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Rapids Rafting Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            background-color: #d3c4f3;
+            padding: 10px 20px;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #c3b0f0;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .white-water {
+            background-color: url('images/hero.jpg') no-repeat center center;
+            padding: 40px 20px;
+        }
+
+        .history {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            background-color: #eae4ff;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .history .text {
+            text-align: left;
+        }
+
+        .history img {
+            width: 150px;
+            height: 150px;
+            background-color: #9b89cc;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .gallery figure {
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .gallery figure img {
+            width: 80px;
+            height: 80px;
+            background-color: #ccc;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d3c4f3;
+            padding: 20px;
+        }
+
+        footer .icons {
+            display: flex;
+        }
+
+        footer .icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Rafting Site Logo -->
-        <img src="images/rapids.jpeg" alt="Rapids Rafting Adventures Logo" class="logo">
-        <!-- Navigation -->
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="trips.html">TRIPS</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <div class="hero"
+<header>
+    <img src="images/rapids.jpeg" alt="Rapids Rafting Adventures Logo" class="logo">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Trips</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <div class="hero"
             style="background-image: url('images/hero.jpg');">
-            
-            <h1>RAPIDS RAFTING ADVENTURES</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy Client" class="client-img">
-                <p>Our mission is to provide thrilling and safe rafting experiences that bring people closer to nature and create unforgettable memories.</p>
-            </article>
-        </div>
-
-                
+    <section class="white-water section">
         
+        <h1>RAPIDS RAFTING ADVENTURES</h1>
+        <p>Our mission is to provide thrilling and safe rafting experiences that bring people closer to nature and create unforgettable memories.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+    </section>
 
-        <!-- History Section -->
-        <section>
-            <h2>HISTORY</h2>
-            <p>Our company was founded by passionate adventurers with a love for the great outdoors. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-            </p>
-        </section>
+    <section class="history">
+        <h2>HISTORY</h2>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+        </div>
+        <img src="images/happy-client.jpg" alt="Happy Client" class="client-img">
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+        </div>
+    </section>
 
-        <!-- Adventure Section -->
-        <section>
-            <h2>ADVENTURE AWAITS YOU!</h2>
-            <img src="images/rafting1.jpg" alt="Rafting Adventure 1">
-            <img src="images/rafting2.jpg" alt="Rafting Adventure 2">
-            <img src="images/rafting3.jpg" alt="Rafting Adventure 3">
-            <img src="images/rafting4.jpg" alt="Rafting Adventure 4">
-            <img src="images/rafting5.jpg" alt="Rafting Adventure 5">
-        </section>
-    </main>
+    <section class="gallery section">
+        <h2>ADVENTRURE AWAITS YOU!</h2>
+        <figure>
+            <img src="images/rafting1.jpg" alt="FUN">
+            <figcaption>FUN</figcaption>
+        </figure>
+        <figure>
+            <img src="images/rafting2.jpg" alt="EXPLORE">
+            <figcaption>EXPLORE</figcaption>
+        </figure>
+        <figure>
+            <img src="images/rafting3.jpg" alt="DISCOVERY">
+            <figcaption>DISCOVERY</figcaption>
+        </figure>
+        <figure>
+            <img src="images/rafting4.jpg" alt="THRILL">
+            <figcaption>THRILL</figcaption>
+        </figure>
+        <figure>
+            <img src="images/rafting5.jpg" alt="NATURE">
+            <figcaption>NATURE</figcaption>
+        </figure>
+    </section>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Rapids Rafting Adventures. Designed by Diana Dee Daquinag.</p>
+<footer>
+    <p>2024 Rapids Rafting Adventures. Designed by Diana Dee Daquinag</p>
+    <div class="icons">
         <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" ></a>
         <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" ></a>
         <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" ></a>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>
